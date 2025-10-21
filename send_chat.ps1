@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri http://127.0.0.1:5000/chat -Method POST -Headers @{"Content-Type"="application/json"} -Body '{"user_id": "123", "message": "What are your business hours?"}'
