@@ -35,10 +35,9 @@ docker-compose.yml
     pip install -r requirements.txt
     ```
 
-3.  **Start Redis:**
+3.  **Start Redis (Optional, if not using Docker Compose):**
 
-    Make sure you have Redis installed and running on `localhost:6379`.
-
+    If you are running the application directly (i.e., `python app.py`), ensure you have Redis installed and running on `localhost:6379`. If you are using Docker Compose, this step is not necessary as Redis will be managed by Docker.
 4.  **Run the application:**
 
     ```bash
@@ -78,3 +77,23 @@ On Windows, you can use the provided PowerShell script to send a test message:
 ```powershell
 .\send_chat.ps1
 ```
+
+## Contributing
+
+### Pushing Changes to Remote
+
+If you make changes to the project and want to push them to your remote GitHub repository, follow these steps:
+
+1.  **Stage your changes:**
+    ```bash
+    git add .
+    ```
+2.  **Commit your changes:**
+    ```bash
+    git commit -m "Your descriptive commit message here"
+    ```
+3.  **Push to the remote repository:**
+    ```bash
+    git push origin main
+    ```
+    (Replace `main` with your branch name if it's different, e.g., `master`.)
